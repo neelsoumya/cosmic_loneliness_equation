@@ -11,6 +11,11 @@ L = c/ ( p^(1/3)  )
 
 L
 
+d = 1/320
+
+L = ( (3 * pi ) / ( 4 * p * d ) )^(1/3)
+
+L
 
 # TODO: sample p, d and plot L
 
