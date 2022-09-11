@@ -60,5 +60,9 @@ L_dist = ( (3 * pi ) / ( 4 * p_dist * d ) )^(1/3)
 L_dist
 
 # plot L log
-ggplot2::qplot( log10( L_dist) )
+ggplot2::qplot( log10( L_dist), 
+                xlab = 'log10 lifetime of human civilization',
+                ylab = 'Frequency'
+                )
 
+summary( (L_dist)  )
