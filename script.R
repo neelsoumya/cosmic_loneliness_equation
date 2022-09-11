@@ -70,3 +70,7 @@ ggplot2::qplot( log10( L_dist),
                 )
 
 summary( (L_dist)  )
+
+ggplot2::qplot(x = p_dist_log, y = L_dist)
+
+ggplot2::qplot(y = p_dist_log, x = L_dist)
