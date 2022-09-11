@@ -1,3 +1,9 @@
+#################################################
+# Code to calculate the minimum value 
+# of the lifetime of an advanced civilization
+# so that it can detect the presence of another
+# advanced radio transmitting civilization
+##################################################
 
 c = (240 * pi)^(1/3)
 
