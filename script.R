@@ -50,11 +50,15 @@ L
 ############################
 
 # sample from uniform distribution for log10(p)
-p_dist_log = runif(n = 1000, min = log10(1e-30), max = log10(1e-3))
+N_samples = 1000 # number of samples
+p_log_MIN = log10(1e-30) # minimum value of p on log scale
+p_log_MAX = log10(1e-3)  # maximum value of p on log scale
+p_dist_log = runif(n = N_samples, min = p_log_MIN, max = p_log_MAX)
 p_dist = 10^p_dist_log
 
 d = 1/320
 
+# cosmic loneliness equation
 L_dist = ( (3 * pi ) / ( 4 * p_dist * d ) )^(1/3)
 
 L_dist
