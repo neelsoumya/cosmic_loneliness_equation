@@ -56,7 +56,7 @@ cd cosmic_loneliness_equation
 setwd('~/cosmic_loneliness_equation')
 ```
 
-In R Studioo run the script `script.R`
+In R Studio run the script `script.R`
 
 or
 
