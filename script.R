@@ -11,6 +11,9 @@
 library(ggplot2)
 
 
+###########################
+# basic calculations
+###########################
 c = (240 * pi)^(1/3)
 
 
@@ -73,10 +76,13 @@ summary( (L_dist)  )
 
 ggplot2::qplot(x = p_dist_log, y = L_dist)
 
-ggplot2::qplot(y = p_dist_log, x = L_dist)
+ggplot2::qplot(y = p_dist_log, x = L_dist, 
+               xlab = 'Lifetime of human civilization',
+               ylab = 'log10 probability of advanced civilization')
 
 # ggplot2::qplot(y = log10(p_dist_log + 0.1), x = log10(L_dist + 0.1) )
 ggplot2::qplot(y = p_dist_log, x = log10(L_dist), 
                xlab = 'log10 lifetime of human civilization',
                ylab = 'log10 probability of advanced civilization
                ')
+
