@@ -66,7 +66,9 @@ and type
 
 R --no-save < script.R
 
+## Manuscript and citation
 
+Forthcoming
 
 ## Contact
 
