@@ -56,6 +56,18 @@ cd cosmic_loneliness_equation
 setwd('~/cosmic_loneliness_equation')
 ```
 
+In R Studioo run the script `script.R`
+
+or
+
+Go to your terminal
+
+and type
+
+R --no-save < script.R
+
+
+
 ## Contact
 
 Soumya Banerjee
