@@ -56,7 +56,7 @@ p_log_MAX = log10(1e-3)  # maximum value of p on log scale
 p_dist_log = runif(n = N_samples, min = p_log_MIN, max = p_log_MAX)
 p_dist = 10^p_dist_log
 
-d = 1/320
+d = 1/320 # stellar density in our neighbourhood
 
 # cosmic loneliness equation
 L_dist = ( (3 * pi ) / ( 4 * p_dist * d ) )^(1/3)
@@ -76,4 +76,7 @@ ggplot2::qplot(x = p_dist_log, y = L_dist)
 ggplot2::qplot(y = p_dist_log, x = L_dist)
 
 # ggplot2::qplot(y = log10(p_dist_log + 0.1), x = log10(L_dist + 0.1) )
-ggplot2::qplot(y = p_dist_log, x = log10(L_dist) )
+ggplot2::qplot(y = p_dist_log, x = log10(L_dist), 
+               xlab = 'log10 lifetime of human civilization',
+               ylab = 'log10 probability of advanced civilization
+               ')
