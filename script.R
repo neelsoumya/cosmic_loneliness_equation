@@ -76,15 +76,20 @@ ggplot2::qplot( log10( L_dist),
 
 summary( (L_dist)  )
 
-ggplot2::qplot(x = p_dist_log, y = L_dist)
+ggplot2::qplot(x = p_dist_log, y = L_dist,
+               xlab = 'log10 probability of advanced civilization',
+               ylab = 'Lifetime of human civilization'
+               )
 
 ggplot2::qplot(y = p_dist_log, x = L_dist, 
                xlab = 'Lifetime of human civilization',
-               ylab = 'log10 probability of advanced civilization')
+               ylab = 'log10 probability of advanced civilization'
+               )
 
 # ggplot2::qplot(y = log10(p_dist_log + 0.1), x = log10(L_dist + 0.1) )
 ggplot2::qplot(y = p_dist_log, x = log10(L_dist), 
                xlab = 'log10 lifetime of human civilization',
                ylab = 'log10 probability of advanced civilization
                ')
+
 
