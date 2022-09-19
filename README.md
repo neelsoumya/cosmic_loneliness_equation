@@ -8,7 +8,11 @@ Cosmic loneliness equation
 
 `script.R` Code to calculate the minimum value of the lifetime of an advanced civilization so that it can detect the presence of another advanced radio transmitting civilization
 
+https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/script.R
+
 `app.R` an interactive graphical user interface for playing around with the parameters
+
+https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
 
 ## Resources
 
