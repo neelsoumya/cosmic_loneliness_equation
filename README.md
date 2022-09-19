@@ -38,6 +38,15 @@ install.packages('shiny')
 
 ```
 
+or
+
+run the following script `installer_R.R` from the command line
+
+```r
+R --no-save < installer_R.R
+
+```
+
 * Download a zip file of this repository and unzip it
 
 or
