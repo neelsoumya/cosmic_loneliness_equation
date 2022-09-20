@@ -14,6 +14,7 @@ https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/script.R
 
 https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
 
+
 ## Resources
 
 http://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/Sample%20Models/Biology/Fireflies.nlogo
@@ -80,6 +81,18 @@ Go to your terminal
 and type
 
 R --no-save < script.R
+
+The shiny app `app.R` is an interactive graphical user interface for playing around with the parameters
+
+https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
+
+It can be run with the following comamnd from the R command line
+
+```r
+library(shiny)
+shiny::runApp('cosmic_loneliness')
+
+```
 
 ## Manuscript and citation
 
