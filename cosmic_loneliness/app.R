@@ -36,7 +36,7 @@ ui <- fluidPage(
             #            "Minimum value of p:",
             #            min = (1e-35), #1,
             #            max = (1e-30), #50,
-            #            value = 1e-30, 
+            #            value = 1e-35, 
             #            animate = TRUE
             #)
             #,
