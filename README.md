@@ -66,7 +66,7 @@ git clone https://github.com/neelsoumya/cosmic_loneliness_equation
 cd cosmic_loneliness_equation
 ```
 
-* Go to this new directory and set working directory to this directory in R.
+* Go to this new directory and set working directory to this directory in R in R Studio.
 
 ```r
 setwd('~/cosmic_loneliness_equation')
@@ -86,7 +86,7 @@ The shiny app `app.R` is an interactive graphical user interface for playing aro
 
 https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
 
-It can be run with the following comamnd from the R command line
+It can be run with the following comamnd from the R command line (from the root of the directory)
 
 ```r
 library(shiny)
