@@ -8,6 +8,7 @@
 ###########################################################################
 
 library(shiny)
+library(ggplot2)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -116,3 +117,6 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
+# TODO:
+# shiny::runGitHub('neelsoumya/cosmic_loneliness_equation')
