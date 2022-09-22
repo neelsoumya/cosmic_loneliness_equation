@@ -66,13 +66,13 @@ git clone https://github.com/neelsoumya/cosmic_loneliness_equation
 cd cosmic_loneliness_equation
 ```
 
-* Go to this new directory and set working directory to this directory in R in R Studio.
+* Go to this new directory and set working directory to this directory in R Studio.
 
 ```r
 setwd('~/cosmic_loneliness_equation')
 ```
 
-In R Studio run the script `script.R`
+In R Studio run the script `script.R` (by clicking on the `Source` button)
 
 or
 
@@ -82,7 +82,8 @@ and type
 
 R --no-save < script.R
 
-The shiny app `app.R` is an interactive graphical user interface for playing around with the parameters
+
+* The shiny app `app.R` is an interactive graphical user interface for playing around with the parameters
 
 https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
 
