@@ -1,1 +1,7 @@
 
+Package: cosmic_loneliness_equation
+Type: Package
+Title: cosmic loneliness equation
+Version: 1.0
+Imports: ggplot2,
+          shiny
