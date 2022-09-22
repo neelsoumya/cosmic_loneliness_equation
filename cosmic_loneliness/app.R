@@ -47,7 +47,7 @@ ui <- fluidPage(
                         max = (100/320), #50,
                         value = 1/320, 
                         animate = TRUE
-            )
+                        )
             ,
             
             sliderInput("samples",
@@ -56,7 +56,7 @@ ui <- fluidPage(
                         max = 100000, #50,
                         value = 1000, 
                         animate = TRUE
-            )
+                        )
             
                     ),
         
@@ -67,7 +67,7 @@ ui <- fluidPage(
                   # Show a plot of the generated distribution
                   mainPanel(
                      plotOutput("distPlot")
-                  )
+                          )
     )
 
 )
