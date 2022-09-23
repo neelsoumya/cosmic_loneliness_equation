@@ -93,6 +93,8 @@ https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneli
 in R Studio and click on the button named `Run App`
 
 
+## Application
+
 A free instance of this shiny application can also be accessed here
 
 https://sb2333medschl.shinyapps.io/cosmic_loneliness
