@@ -95,6 +95,13 @@ shiny::runApp('cosmic_loneliness')
 
 ```
 
+or open the file `app.R`
+
+https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
+
+in R Studio and click on the button named `Run App`
+
+
 ## Manuscript and citation
 
 Forthcoming
