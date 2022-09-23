@@ -15,14 +15,6 @@ https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/script.R
 https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
 
 
-## Resources
-
-http://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/Sample%20Models/Biology/Fireflies.nlogo
-
-https://www.wolframalpha.com/input?i2d=true&i=Divide%5B1%2CPower%5B%5C%2840%29x-10%5C%2841%29%2C2%5D%2B5%5D
-
-https://ccl.northwestern.edu/netlogo/models/Daisyworld
-
 
 ## Installation
 
@@ -99,6 +91,21 @@ or open the file `app.R`
 https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
 
 in R Studio and click on the button named `Run App`
+
+
+A free instance of this shiny application can also be accessed here
+
+https://sb2333medschl.shinyapps.io/cosmic_loneliness
+
+
+
+## Resources
+
+http://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/Sample%20Models/Biology/Fireflies.nlogo
+
+https://www.wolframalpha.com/input?i2d=true&i=Divide%5B1%2CPower%5B%5C%2840%29x-10%5C%2841%29%2C2%5D%2B5%5D
+
+https://ccl.northwestern.edu/netlogo/models/Daisyworld
 
 
 ## Manuscript and citation
