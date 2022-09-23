@@ -78,7 +78,7 @@ R --no-save < script.R
 
 https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
 
-It can be run with the following comamnd from the R command line (from the root of the directory)
+It can be run with the following command from the R command line (from the root of the directory)
 
 ```r
 library(shiny)
