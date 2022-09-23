@@ -39,7 +39,6 @@ https://www.rstudio.com/products/rstudio/download/preview/
 ```r
 install.packages('rmarkdown')
 install.packages('knitr')
-install.packages('sqldf')
 install.packages('ggplot2')
 install.packages('shiny')
 
