@@ -120,3 +120,4 @@ shinyApp(ui = ui, server = server)
 
 # TODO:
 # shiny::runGitHub('neelsoumya/cosmic_loneliness_equation')
+# https://stackoverflow.com/questions/37830819/developing-shiny-app-as-a-package-and-deploying-it-to-shiny-server
