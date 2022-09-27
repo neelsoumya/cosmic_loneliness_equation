@@ -31,7 +31,17 @@ ui <- fluidPage(
                         animate = TRUE
                         )
             ,
+
+            sliderInput("min",
+                        "Minimum value of p (probability of another star developing an advanced radio-transmitting civilization):",
+                        min = (1e-30), #1,
+                        max = (1e-3), #50,
+                        value = 1e-30, 
+                        animate = TRUE
+            )
+            ,
             
+                        
             #sliderInput("min",
             #            "Minimum value of p:",
             #            min = (1e-35), #1,
@@ -91,26 +101,42 @@ server <- function(input, output) {
         
         # sample from uniform distribution for log10(p)
         N_samples = input$samples # 1000 # number of samples
-        p_log_MIN = log10(1e-30) # minimum value of p on log scale
-        p_log_MAX = input$bins # log10(1e-3)  # maximum value of p on log scale
+        p_log_MIN = log10(input$min) # log10(1e-30) # minimum value of p on log scale input$min
+        p_log_MAX = log10(input$bins) # log10(1e-3)  # maximum value of p on log scale
         d = input$d #1/320 # stellar density in our neighbourhood
         
-        # sample
-        p_dist_log = runif(n = N_samples, min = p_log_MIN, max = p_log_MAX)
-        p_dist = 10^p_dist_log
-        
-        
-        # cosmic loneliness equation
-        L_dist = ( (3 * pi ) / ( 4 * p_dist * d ) )^(1/3)
-        
-        L_dist
-        
-        # plot L log
-        ggplot2::qplot( log10( L_dist), 
-                        xlab = 'log10 lifetime of human civilization',
-                        ylab = 'Frequency'
-                      )
-        
+        # error check
+        if (10^p_log_MAX < 10^p_log_MIN)
+        {
+            # if max value of p is <  min value of p then error do not sample
+            #cat(10^p_log_MAX)
+            #cat("\n")
+            #cat(10^p_log_MIN)
+            # TODO: show a message
+            shiny::modalDialog(title = "Minimum range cannot be greater than maximum for p")
+            shiny::modalButton(label = 'btn')
+        }
+        else
+        {  
+            # if all values ok then sample  
+            # sample from uniform distribution
+            p_dist_log = runif(n = N_samples, min = p_log_MIN, max = p_log_MAX)
+            p_dist = 10^p_dist_log
+            
+            
+            # cosmic loneliness equation
+            L_dist = ( (3 * pi ) / ( 4 * p_dist * d ) )^(1/3)
+            
+            L_dist
+            
+            # plot L log
+            ggplot2::qplot( log10( L_dist), 
+                            xlab = 'log10 lifetime of human civilization',
+                            ylab = 'Frequency'
+                          )
+            
+        }
+        # end of if structure
         
     })
 }
@@ -120,3 +146,7 @@ shinyApp(ui = ui, server = server)
 
 # TODO:
 # shiny::runGitHub('neelsoumya/cosmic_loneliness_equation')
+# https://stackoverflow.com/questions/37830819/developing-shiny-app-as-a-package-and-deploying-it-to-shiny-server
+
+# TODO: dialog box check if min < max
+# https://shiny.rstudio.com/reference/shiny/1.6.0/modalDialog.html

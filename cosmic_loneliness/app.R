@@ -108,16 +108,18 @@ server <- function(input, output) {
         # error check
         if (10^p_log_MAX < 10^p_log_MIN)
         {
+            # if max value of p is <  min value of p then error do not sample
             #cat(10^p_log_MAX)
             #cat("\n")
             #cat(10^p_log_MIN)
             # TODO: show a message
             shiny::modalDialog(title = "Minimum range cannot be greater than maximum for p")
+            shiny::modalButton(label = 'btn')
         }
         else
         {  
-            
-            # sample
+            # if all values ok then sample  
+            # sample from uniform distribution
             p_dist_log = runif(n = N_samples, min = p_log_MIN, max = p_log_MAX)
             p_dist = 10^p_dist_log
             
