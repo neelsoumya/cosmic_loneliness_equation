@@ -112,7 +112,8 @@ server <- function(input, output) {
             #cat(10^p_log_MAX)
             #cat("\n")
             #cat(10^p_log_MIN)
-            # TODO: show a message
+            # show a message
+            #    https://stackoverflow.com/questions/48523338/how-can-i-add-a-message-box-in-r-shiny
             # shiny::modalDialog(title = "Minimum range cannot be greater than maximum for p")
             # shiny::modalButton(label = 'btn')
             
