@@ -101,9 +101,15 @@ server <- function(input, output) {
         
         # sample from uniform distribution for log10(p)
         N_samples = input$samples # 1000 # number of samples
-        p_log_MIN = log10(1e-30) # minimum value of p on log scale input$min
-        p_log_MAX = input$bins # log10(1e-3)  # maximum value of p on log scale
+        p_log_MIN = log10(input$min) # log10(1e-30) # minimum value of p on log scale input$min
+        p_log_MAX = log10(input$bins) # log10(1e-3)  # maximum value of p on log scale
         d = input$d #1/320 # stellar density in our neighbourhood
+        
+        # error check
+        if (p_log_MAX < p_log_MIN)
+        {
+          shiny::modalDialog()
+        }
         
         # sample
         p_dist_log = runif(n = N_samples, min = p_log_MIN, max = p_log_MAX)
