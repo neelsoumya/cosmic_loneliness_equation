@@ -106,27 +106,34 @@ server <- function(input, output) {
         d = input$d #1/320 # stellar density in our neighbourhood
         
         # error check
-        if (p_log_MAX < p_log_MIN)
+        if (10^p_log_MAX < 10^p_log_MIN)
         {
-          shiny::modalDialog()
+            cat(10^p_log_MAX)
+            cat("\n")
+            cat(10^p_log_MIN)
+            shiny::modalDialog(title = "Minimum range cannot be greater than maximum for p")
         }
-        
-        # sample
-        p_dist_log = runif(n = N_samples, min = p_log_MIN, max = p_log_MAX)
-        p_dist = 10^p_dist_log
-        
-        
-        # cosmic loneliness equation
-        L_dist = ( (3 * pi ) / ( 4 * p_dist * d ) )^(1/3)
-        
-        L_dist
-        
-        # plot L log
-        ggplot2::qplot( log10( L_dist), 
-                        xlab = 'log10 lifetime of human civilization',
-                        ylab = 'Frequency'
-                      )
-        
+        else
+        {  
+            
+            # sample
+            p_dist_log = runif(n = N_samples, min = p_log_MIN, max = p_log_MAX)
+            p_dist = 10^p_dist_log
+            
+            
+            # cosmic loneliness equation
+            L_dist = ( (3 * pi ) / ( 4 * p_dist * d ) )^(1/3)
+            
+            L_dist
+            
+            # plot L log
+            ggplot2::qplot( log10( L_dist), 
+                            xlab = 'log10 lifetime of human civilization',
+                            ylab = 'Frequency'
+                          )
+            
+        }
+        # end of if structure
         
     })
 }
