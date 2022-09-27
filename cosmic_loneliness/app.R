@@ -108,9 +108,10 @@ server <- function(input, output) {
         # error check
         if (10^p_log_MAX < 10^p_log_MIN)
         {
-            cat(10^p_log_MAX)
-            cat("\n")
-            cat(10^p_log_MIN)
+            #cat(10^p_log_MAX)
+            #cat("\n")
+            #cat(10^p_log_MIN)
+            # TODO: show a message
             shiny::modalDialog(title = "Minimum range cannot be greater than maximum for p")
         }
         else
