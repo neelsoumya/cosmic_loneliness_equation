@@ -113,8 +113,11 @@ server <- function(input, output) {
             #cat("\n")
             #cat(10^p_log_MIN)
             # TODO: show a message
-            shiny::modalDialog(title = "Minimum range cannot be greater than maximum for p")
-            shiny::modalButton(label = 'btn')
+            # shiny::modalDialog(title = "Minimum range cannot be greater than maximum for p")
+            # shiny::modalButton(label = 'btn')
+            
+            shiny::showModal(modalDialog(title = "Minimum range cannot be greater than maximum for p",))
+            
         }
         else
         {  
