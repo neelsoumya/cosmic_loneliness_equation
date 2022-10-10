@@ -71,7 +71,9 @@ Go to your terminal
 
 and type
 
+```r
 R --no-save < script.R
+```
 
 
 * The shiny app `app.R` is an interactive graphical user interface for playing around with the parameters
@@ -121,4 +123,5 @@ Soumya Banerjee
 sb2333@cam.ac.uk
 
 neel.soumya@gmail.com
+
 
