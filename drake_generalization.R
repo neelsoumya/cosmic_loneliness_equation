@@ -83,4 +83,5 @@ print("  years \n ")
 
 #############################
 # TODO: Monte-Carlo
+# TODO: create function to return L
 #############################
