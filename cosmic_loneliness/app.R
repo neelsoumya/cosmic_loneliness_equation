@@ -129,7 +129,7 @@ server <- function(input, output) {
             
             
             # cosmic loneliness equation
-            L_dist = ( (3 * pi ) / ( 4 * p_dist * d ) )^(1/3)
+            L_dist = ( (3 ) / ( 4 * p_dist * d  * pi) )^(1/3)
             
             L_dist
             
