@@ -9,7 +9,7 @@ library(ggplot2)
 # variables
 # The diameter of the Milky Way is 185000 light years
 # https://beltoforion.de/en/drake-equation/drake-equation.php#idRef7
-R_M = 92500 # light years
+R_M = 46250 # light years
 
 ###################
 # scenario 1
