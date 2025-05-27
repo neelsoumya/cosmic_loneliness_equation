@@ -18,6 +18,10 @@ https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneli
 
 https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/distance_function_plot_drake.ipynb
 
+`drake_generalization.R`: Stochastic version of Drake equation
+
+https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/drake_generalization.R
+
 ## Installation
 
 * Install R
