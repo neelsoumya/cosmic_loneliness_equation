@@ -14,7 +14,9 @@ https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/script.R
 
 https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/cosmic_loneliness/app.R
 
+`distance_function_plot_drake.ipynb`: IPython notebook to plot function of distance
 
+https://github.com/neelsoumya/cosmic_loneliness_equation/blob/main/distance_function_plot_drake.ipynb
 
 ## Installation
 
